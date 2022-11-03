@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slide">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="snap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/is_view_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_play"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/gradient_green"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Играть"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null"
+                            app:cardCornerRadius="20dp" />
+
+
+                        <Button
+                            android:id="@+id/btn_sounds"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/gradient_blue"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Звук"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null"
+                            app:cardCornerRadius="20dp" />
+
+                        <Button
+                            android:id="@+id/btn_about"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/gradient_vielent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Об приложении"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null"
+                            app:cardCornerRadius="20dp" />
+
+                        <Button
+                            android:id="@+id/btn_exit"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/gradient_red"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp"
+                            android:text="Выход"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@null"
+                            app:cardCornerRadius="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
